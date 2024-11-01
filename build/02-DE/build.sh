@@ -28,7 +28,7 @@ rpm-ostree install \
     qt6-qtwayland
 
 # Login manager
-tar -xzf /tmp/build/DE/Sddm_Candy.tar.gz -C /usr/share/sddm/themes/
+unzip /tmp/build/DE/sddm-eucalyptus-drop-v2.0.0.zip -d /usr/share/sddm/themes/
 cp /tmp/build/DE/sddm.conf /etc/sddm.conf.d/00-base.conf
 
 systemctl enable sddm
