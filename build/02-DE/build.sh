@@ -1,4 +1,6 @@
-#! /usr/bin/env bash
+#!/usr/bin/env bash
+
+source /tmp/build/vars.sh
 
 # Packages
 rpm-ostree install \
@@ -18,8 +20,8 @@ rpm-ostree install \
     cliphist
 
 # Login manager
-tar -xzvf /tmp/files/sugar-dark.tar -C /usr/share/sddm/themes
-cp /tmp/conf/sddm/sddm.conf /etc/sddm.conf.d/00-base.conf
+tar -xzvf /tmp/build/DE/sugar-dark.tar -C /usr/share/sddm/themes
+cp /tmp/build/DE/sddm.conf /etc/sddm.conf.d/00-base.conf
 
 systemctl enable sddm
 

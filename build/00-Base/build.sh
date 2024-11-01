@@ -1,4 +1,6 @@
-#! /usr/bin/env bash
+#!/usr/bin/env bash
+
+source /tmp/build/vars.sh
 
 # Base packages
 rpm-ostree install \
