@@ -7,5 +7,11 @@ rpm-ostree install \
     pavucontrol \
     pamixer \
     network-manager-applet \
+    bluez \
+    bluez-tools \
     blueman \
-    udiskie
+    udiskie \
+    polkit-gnome \
+    parallel \
+    qt5-qtimageformats \
+    kde-cli-tools
