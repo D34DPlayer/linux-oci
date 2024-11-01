@@ -9,6 +9,7 @@ rpm-ostree install \
     qt5-qtquickcontrols \
     qt5-qtquickcontrols2 \
     qt5-qtgraphicaleffects \
+    qt5-qtimageformats \
     sddm \
     dunst \
     rofi-wayland \
@@ -17,10 +18,17 @@ rpm-ostree install \
     swaylock-effects \
     wlogout \
     swappy \
-    cliphist
+    cliphist \
+    nwg-look \
+    qt5ct \
+    qt6ct \
+    kvantum \
+    kvantum-qt5 \
+    qt5-qtwayland \
+    qt6-qtwayland
 
 # Login manager
-tar -xzvf /tmp/build/DE/sugar-dark.tar -C /usr/share/sddm/themes
+tar -xzf /tmp/build/DE/Sddm_Candy.tar.gz -C /usr/share/sddm/themes/
 cp /tmp/build/DE/sddm.conf /etc/sddm.conf.d/00-base.conf
 
 systemctl enable sddm

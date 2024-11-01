@@ -2,3 +2,4 @@
 
 ## Notes
 - Theme error: "QtGraphicalEffects" is not installed
+- TODO: install flatpaks

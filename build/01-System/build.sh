@@ -13,5 +13,4 @@ rpm-ostree install \
     udiskie \
     polkit-gnome \
     parallel \
-    qt5-qtimageformats \
     kde-cli-tools

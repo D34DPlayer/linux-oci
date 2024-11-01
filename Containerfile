@@ -60,3 +60,10 @@ RUN /tmp/build/DE/build.sh && \
 COPY ./build/03-Terminal /tmp/build/Terminal
 RUN /tmp/build/Terminal/build.sh && \
     ostree container commit
+
+COPY ./build/04-Apps /tmp/build/Apps
+RUN /tmp/build/Apps/build.sh && \
+    ostree container commit
+
+
+COPY ./build/Justfile /usr/share/ublue-os/just/60-custom.just

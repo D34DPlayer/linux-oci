@@ -1,0 +1,7 @@
+# vim: set ft=make:
+
+# Download the default configuration files
+home-setup:
+    git clone https://github.com/D34DPlayer/linux-oci.git /tmp/linux-oci
+    cp -R /tmp/linux-oci/user/* $HOME/
+    rm -rf /tmp/linux-oci
